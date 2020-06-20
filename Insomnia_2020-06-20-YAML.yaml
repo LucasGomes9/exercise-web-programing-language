@@ -1,0 +1,203 @@
+_type: export
+__export_format: 4
+__export_date: 2020-06-20T21:13:14.796Z
+__export_source: insomnia.desktop.app:v2020.2.2
+resources:
+  - _id: req_8a2c531463ce4c729c5f6b99147e7f71
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"complemento": "oioi"
+        }
+    created: 1592686014917
+    description: ""
+    headers:
+      - id: pair_f883580d7e9642c0a53b0af54492c58c
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1592686014917
+    method: POST
+    modified: 1592687506499
+    name: Adicionar Complemento
+    parameters: []
+    parentId: wrk_3ee3440513674407baebcb1bece26eb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/produtos/50/complemento"
+    _type: request
+  - _id: wrk_3ee3440513674407baebcb1bece26eb4
+    created: 1592675972594
+    description: ""
+    modified: 1592675972594
+    name: Trabalho LPW
+    parentId: null
+    scope: null
+    _type: workspace
+  - _id: req_8e592f81191b4e24849c46b7ccdb3589
+    authentication: {}
+    body: {}
+    created: 1592685967614
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1592685967614
+    method: DELETE
+    modified: 1592687382184
+    name: Deletar Produto
+    parameters: []
+    parentId: wrk_3ee3440513674407baebcb1bece26eb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/produtos/50"
+    _type: request
+  - _id: req_3986a7945dc34fdfbde8fd68cd845e52
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+            "id": "50",
+            "nomeDoProduto": "celular",
+            "quantidade": 31,
+            "valorUnitario": 100		
+          }
+    created: 1592685304751
+    description: ""
+    headers:
+      - id: pair_825f84564a9d439393fbc54d7efaf242
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1592685304751
+    method: PUT
+    modified: 1592687522105
+    name: Alterar Produto
+    parameters: []
+    parentId: wrk_3ee3440513674407baebcb1bece26eb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/produtos/3"
+    _type: request
+  - _id: req_bd596ce0f6d4459a9fdeb2f8110a4cba
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+            "id": "4",
+            "nomeDoProduto": "celular",
+            "quantidade": 2,
+            "valorUnitario": 2000,
+        		"complemento": "um celular comum",
+            "precoTotal": "",
+            "precoDeVenda": "",
+            "lucro": "",
+            "situacaoDoProduto": ""
+          }
+    created: 1592684200066
+    description: ""
+    headers:
+      - id: pair_b8878490f01941ceb407e448b58b3acc
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1592684200067
+    method: POST
+    modified: 1592687494724
+    name: Incluir Produto
+    parameters: []
+    parentId: wrk_3ee3440513674407baebcb1bece26eb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/produtos"
+    _type: request
+  - _id: req_12f5a09acb3c4d7cbbd1e7aa5d190b9f
+    authentication: {}
+    body: {}
+    created: 1592684035673
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1592684035673
+    method: GET
+    modified: 1592687368855
+    name: Listar pelo Id
+    parameters: []
+    parentId: wrk_3ee3440513674407baebcb1bece26eb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/produtos/1"
+    _type: request
+  - _id: req_3070df75b7d74afda1f27c52873b116a
+    authentication: {}
+    body: {}
+    created: 1592683927465
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1592683927541
+    method: GET
+    modified: 1592684024564
+    name: Listar Todos Produtos
+    parameters: []
+    parentId: wrk_3ee3440513674407baebcb1bece26eb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url  }}/produtos"
+    _type: request
+  - _id: env_aa98bdf71d1de0dc2b60ab2ea7291d7e4891c8be
+    color: null
+    created: 1592675972695
+    data:
+      base_url: http://localhost:3333
+    dataPropertyOrder:
+      "&":
+        - base_url
+    isPrivate: false
+    metaSortKey: 1592675972696
+    modified: 1592683974917
+    name: Base Environment
+    parentId: wrk_3ee3440513674407baebcb1bece26eb4
+    _type: environment
+  - _id: jar_aa98bdf71d1de0dc2b60ab2ea7291d7e4891c8be
+    cookies: []
+    created: 1592675972700
+    modified: 1592675972700
+    name: Default Jar
+    parentId: wrk_3ee3440513674407baebcb1bece26eb4
+    _type: cookie_jar
+  - _id: spc_d299e1031a0e4c2c9db4d292938bf195
+    contentType: yaml
+    contents: ""
+    created: 1592675972605
+    fileName: Trabalho LPW
+    modified: 1592675972605
+    parentId: wrk_3ee3440513674407baebcb1bece26eb4
+    _type: api_spec
